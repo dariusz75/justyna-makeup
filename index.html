@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/my-styles.css">
   <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,7 +38,7 @@
 
         <div class="collapse navbar-collapse navbar-right" id="mynavbar-content">
           <ul class="nav navbar-nav ">
-            <li><a data-toggle="collapse" data-target=".navbar-collapse" data-id="about-me" href="#about-me" class="scroll-link" >About</a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse" data-id="about-me" href="#about-me" class="scroll-link" >About Me</a></li>
             <li><a data-toggle="collapse" data-target=".navbar-collapse" data-id="my-works" href="#my-works" class="scroll-link" >My Works</a></li>
             <li><a data-toggle="collapse" data-target=".navbar-collapse" data-id="contact" href="#contact" class="scroll-link" >Contact</a></li>
           </ul>          
@@ -44,7 +46,18 @@
       </div>
     </div>  
 
-    
+    <!--TOP SLIDER-->
+    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+  
+  <div id="wowslider-container1">
+    <div class="ws_images"><ul>
+      <li><img src="data1/images/homepageslide2.jpg" alt="homepageslide2" title="homepageslide2" id="wows1_1"/></li>
+      <li><img src="data1/images/homepageslide3.jpg" alt="homepageslide3" title="homepageslide3" id="wows1_2"/></li>
+      <li><img src="data1/images/homepageslide4.jpg" alt="wowslider.com" title="homepageslide4" id="wows1_3"/></a></li>
+      <li><img src="data1/images/homepageslide5.jpg" alt="homepageslide5" title="homepageslide5" id="wows1_4"/></li>
+    </ul></div>
+  </div>  
+  
 
     <!-- ABOUT ME SECTION -->
     <div class="row" id="about-me">
@@ -72,19 +85,19 @@
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4">
         <div class="social-icons">
-          <a href="https://github.com/dariusz75" target="_blank" ><i class="fa fa-github "></i></a>
+          <a href="https://www.facebook.com/MakeUpByJustyna" target="_blank" ><i class="fa fa-facebook "></i></a>
         </div>
       </div>
 
       <div class="col-xs-4 col-sm-4 col-md-4">
         <div class="social-icons">  
-          <a href="https://uk.linkedin.com/in/dariusz-franczak-52251753" target="_blank" ><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" ><i class="fa fa-linkedin"></i></a>
         </div>
       </div>
 
       <div class="col-xs-4 col-sm-4 col-md-4">
         <div class="social-icons">
-          <a href="https://twitter.com/franczesko77" target="_blank" ><i class="fa fa-twitter"></i></a>
+          <a href="https://twitter.com/" target="_blank" ><i class="fa fa-twitter"></i></a>
         </div>
       </div>
 
@@ -261,11 +274,11 @@
       <h2 class="first-line">If you have any questions, please get in touch with me by using the contact form. </h2>
       <h2>or </h2>
       <h2>give me a call on</h2>
-      <h2><strong>07707636696</strong></h2>
-      <h2>You can also reach me through LinkedIn.</h2>
+      <h2><strong>07814 420032</strong></h2>
+      <h2>You can also reach me through Facebook.</h2>
 
       <div class="linked-contact-icon">
-      <a href="https://uk.linkedin.com/in/dariusz-franczak-52251753" target="_blank" ><i class="fa fa-linkedin fa-5x"></i></a>
+      <a href="https://www.facebook.com/MakeUpByJustyna" target="_blank" ><i class="fa fa-facebook fa-5x"></i></a>
       </div>
     </div>  
   </div>
@@ -282,16 +295,20 @@
         <div class="form-bottom contact-form"> 
       <form role="form" method="post" action="mailer.php">
         <div class="form-group">
-          <label class="sr-only" for="contact-email">Email</label>
-            <input type="text" name="email" placeholder="Email..." class="contact-email form-control" id="contact-email">
+          <label class="sr-only" for="name">Name</label>
+            <input type="text" name="name" placeholder="Name:" class="contact-email form-control" id="contact-name">
           </div>
           <div class="form-group">
-            <label class="sr-only" for="contact-subject">Subject</label>
-            <input type="text" name="subject" placeholder="Subject..." class="contact-subject form-control" id="contact-subject">
+            <label class="sr-only" for="subject">Subject</label>
+            <input type="text" name="subject" placeholder="Subject:" class="contact-subject form-control" id="contact-subject">
           </div>
           <div class="form-group">
-            <label class="sr-only" for="contact-message">Message</label>
-            <textarea name="message" placeholder="Message..." class="contact-message form-control" id="contact-message"></textarea>
+          <label class="sr-only" for="email">Email</label>
+            <input type="text" name="email" placeholder="Email address:" class="contact-email form-control" id="contact-email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="message">Message</label>
+            <textarea name="message" placeholder="Message:" class="contact-message form-control" id="contact-message"></textarea>
           </div>
           <button type="submit" class="btn btn-primary submit">Send message</button>
       </form>
@@ -330,8 +347,10 @@ blueimp.Gallery(
     }
 );
 </script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/myscript.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/myscript.js"></script>
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
   </body>
 </html>

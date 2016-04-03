@@ -1,11 +1,12 @@
 <?php
 /* Set e-mail recipient */
-$myemail = "darius32@op.pl";
+$myemail = "justynailczuk@yahoo.com";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['inputName'], "Name:");
+$subject = check_input($_POST['inputSubject'], "Subject:");
 $email = check_input($_POST['inputEmail'], "Email address:");
-$message = check_input($_POST['inputMessage'], "Your message:");
+$message = check_input($_POST['inputMessage'], "Message:");
 
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
@@ -23,9 +24,7 @@ Someone has sent you a message using your contac form:
 Name: $name
 Email: $email
 Subject: $subject
-
-Message:
-$message
+Message: $message
 
 ";
 
