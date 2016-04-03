@@ -1,14 +1,27 @@
 /* --##################################################################################-- */
 * {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #4d292d; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 300; }
 
 /* --######### NAVIGATION SECTION #####################################################-- */
-.nav {
+.navbar {
+  background-color: #f7ebe0;
   font-size: 2rem; }
+
+a.navbar-brand img {
+  width: 70%;
+  height: auto;
+  margin: 0 0 20px 25px; }
+
+ul {
+  padding: 5px 0 0 0; }
+
+ul.nav.navbar-nav li a {
+  color: #4d292d; }
 
 /* --######### TOP PICTURE SECTION #####################################################-- */
 .top-pict-col {
@@ -21,12 +34,15 @@ h1, h2, h3, h4, h5 {
 
 /* --######### ABOUT SECTION #####################################################-- */
 #about-me {
-  background-color: #EFEFEF;
+  background-color: #deb99e;
   font-size: 1.3em;
   text-align: center;
   padding: 60px 5%; }
 
-.my_photo {
+.justyna {
+  font-size: 1.43em; }
+
+.my-photo {
   padding-top: 3rem;
   margin-left: auto;
   margin-right: auto; }
@@ -40,48 +56,21 @@ h1, h2, h3, h4, h5 {
 .social-icons {
   font-size: 3em; }
 
-/* --######### SKILLS SECTION #####################################################-- */
-#skills {
-  background-color: #E3E5E4;
+/* --######### MY WORKS SECTION #####################################################-- */
+#my-works {
+  background-color: #ebdac9;
   font-size: 1.3em;
   text-align: center;
   padding: 60px 5%; }
 
-#skills img {
-  width: 60%;
-  margin: 30px auto 30px auto; }
-
-#skills h1 {
-  margin: 0; }
-
-#skills p {
-  padding: 20px 5% 20px 5%; }
-
-/* --######### EXPERIENCE SECTION #####################################################-- */
-#experience {
-  background-color: #EFEFEF;
-  font-size: 1.3em;
-  text-align: center;
-  padding: 60px 5%; }
-
-#experience h1 {
-  margin: 0; }
-
-#experience p {
-  padding: 20px 2% 20px 2%; }
-
-/* --######### PORTFOLIO SECTION #####################################################-- */
-#portfolio {
-  padding: 60px 5%; }
-
-#portfolio h1 {
-  text-align: center;
-  margin: 0 0 60px 0; }
+h1.my-works-h1 {
+  margin: -30px 0 30px 0; }
 
 /* --######### CONTACT SECTION #####################################################-- */
 #contact {
   padding: 60px 5%;
-  background-color: #E3E5E4; }
+  background-color: #f5e1ce;
+  padding-bottom: 100px; }
 
 .contact-content {
   text-align: center;
@@ -93,19 +82,22 @@ h1, h2, h3, h4, h5 {
 .form-top {
   margin-top: 25px; }
 
+.submit {
+  background-color: #4d292d;
+  border: 0; }
+
+.submit:hover {
+  background-color: #deb99e; }
+
 /* --######### FOOTER #####################################################-- */
 footer {
   padding: 20px 1% 0px 0px; }
 
 .footer-left {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 10px; }
 
-.footer-right {
-  float: right;
-  display: table; }
-
-.footer-right a {
-  float: right;
-  top: -10; }
+span {
+  color: #4d292d; }
 
 /*# sourceMappingURL=my-styles.css.map */
