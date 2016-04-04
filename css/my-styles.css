@@ -7,6 +7,9 @@
 h1, h2, h3, h4, h5 {
   font-weight: 300; }
 
+.container-fluid {
+  padding: 0; }
+
 /* --######### NAVIGATION SECTION #####################################################-- */
 .navbar {
   background-color: #f7ebe0;
@@ -23,17 +26,17 @@ ul {
 ul.nav.navbar-nav li a {
   color: #4d292d; }
 
-/* --######### TOP PICTURE SECTION #####################################################-- */
-.top-pict-col {
-  background-color: #CCFFE5;
-  padding: 0;
-  margin: 50px 0 0 0; }
+/* --######### TOP SLIDER SECTION #####################################################-- */
+.carousel .item {
+  width: 100%;
+  max-height: 900px; }
 
-.top-pict-col img {
+.carousel .item img {
   width: 100%; }
 
 /* --######### ABOUT SECTION #####################################################-- */
-
+#wowslider-container1 {
+  padding: 0 -15px 0 -15px !important; }
 
 #about-me {
   background-color: #deb99e;

@@ -25,6 +25,10 @@ $main-padding: 60px 5%;
  	font-weight: 300;
  } 
 
+.container-fluid{
+	padding: 0;
+}
+
 /* --######### NAVIGATION SECTION #####################################################-- */
 
 
@@ -46,18 +50,16 @@ ul{
  ul.nav.navbar-nav li a{
 	color: $dark-brown;
 }
-/* --######### TOP PICTURE SECTION #####################################################-- */
-.top-pict-col{
-	background-color: #CCFFE5;
-	padding: 0;
-	margin: 50px 0 0 0;
+/* --######### TOP SLIDER SECTION #####################################################-- */
+
+.carousel .item {
+	width: 100%;
+	max-height: 900px;
 }
 
-.top-pict-col img{
+.carousel .item img {
 	width: 100%;
 }
-
-
 
 /* --######### ABOUT SECTION #####################################################-- */
 
